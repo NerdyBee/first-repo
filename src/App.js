@@ -1,8 +1,10 @@
 import React, {useState} from 'react';
+import RoomCard from './components/Card';
 import FeaturedRooms from './components/FeaturedRooms';
 import Hero from './components/Hero';
 import InfoSection from './components/InfoSection';
 import Navbar from './components/Navbar';
+import Rooms from './components/Rooms';
 import SideBar from './components/SideBar';
 import { SliderData } from './data/SliderData';
 import GlobalStyle from './globalStyles';
@@ -23,6 +25,7 @@ function App() {
       <Hero slides={SliderData} />
       <InfoSection />
       <FeaturedRooms />
+      <Rooms />
     </>
   );
 }

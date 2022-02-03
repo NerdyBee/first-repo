@@ -16,13 +16,16 @@ const InfoDiv = styled.section`
 
 
 const Container = styled.div`
-  padding: 1rem calc((100vw - 1300px) / 2);
+  padding: 2rem calc((100vw - 1300px) / 2);
+  margin: 2rem auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
   grid-template-rows: 600px;
 
   @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
+    padding: 0;
   }
 `;
 
@@ -35,6 +38,7 @@ const ColumnLeft = styled.div`
   line-height: 1.4;
   padding: 1rem 2rem;
   //   order: $/{({reverse}) => (reverse ? '2' : '1')};
+
 
   h1 {
     color: #008c94;
@@ -59,7 +63,7 @@ const Featured = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem;
   width: 100%;
 `;
 
@@ -71,7 +75,7 @@ const FeatureList = styled.li`
 `;
 
 const ColumnRight = styled.div`
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;

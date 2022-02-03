@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from "styled-components";
 import { items } from '../data/RoomData';
-import Room from './Room';
+import RoomCard from './Card';
 
 const Container = styled.div`
   padding: 20px;
@@ -17,7 +17,7 @@ const FeaturedRooms = () => {
       {items
         .filter((item) => item.fields.featured === true)
         .map((item) => (
-          <Room item={item} key={item.id} />
+          <RoomCard item={item} key={item.id} />
         ))}
     </Container>
   );

@@ -62,6 +62,8 @@ const HeroImage = styled.img`
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+    transition: 1.4s;
+    transform-origin: 50%, 50%;
 `;
 const HeroContent = styled.div`
   position: absolute;
@@ -111,7 +113,7 @@ const arrowButtons = css`
     padding: 10px;
     margin-right: 1rem;
     user-select: none;
-    transition: 0.3s;
+    transition: all 1.5s ease;
 
     &:hover {
         background: #cd853f;
