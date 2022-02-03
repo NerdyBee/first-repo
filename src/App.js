@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import RoomCard from './components/Card';
 import FeaturedRooms from './components/FeaturedRooms';
 import Hero from './components/Hero';
 import InfoSection from './components/InfoSection';
