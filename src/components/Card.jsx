@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { Button } from "./Button";
-import Img1 from "../images/room-1.jpeg";
 
 const CardDiv = styled.section`
   display: flex;
@@ -19,16 +18,16 @@ const CardDiv = styled.section`
   }
 `;
 
-const Container = styled.div`
-  padding: 1rem calc((100vw - 1300px) / 2);
-  display: grid;
-  gap: 3rem;
-  grid-template-columns: repeat(4, 1fr);
+// const Container = styled.div`
+//   padding: 1rem calc((100vw - 1300px) / 2);
+//   display: grid;
+//   gap: 3rem;
+//   grid-template-columns: repeat(4, 1fr);
 
-  @media screen and (max-width: 760px) {
-    grid-template-columns: 1fr;
-  }
-`;
+//   @media screen and (max-width: 760px) {
+//     grid-template-columns: 1fr;
+//   }
+// `;
 
 const Card = styled.div`
   color: #fff;
