@@ -29,6 +29,44 @@ const CardDiv = styled.section`
 //   }
 // `;
 
+const Title = styled.h2`
+  position: relative;
+  width: max-content;
+  margin: 1rem 0;
+
+  :after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding) * -1);
+    bottom: 0;
+    margin-bottom: -0.29rem;
+    width: calc(100% + var(--padding));
+    background: #090;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+  }
+`;
+
+const CardContent = styled.div`
+  --padding: 1.5rem;
+  padding: var(--padding);
+  background: linear-gradient(
+    hsl(0 0% 0% / 0),
+    hsl(20 0% 0% / 0.3) 20%,
+    hsl(0 0% 0% / 1)
+  );
+
+  transform: translateY(68%);
+  transition: transform 500ms ease;
+
+  & > *:not(${Title}) {
+    opacity: 0;
+    transition: opacity 500ms linear;
+  }
+`;
+
 const Card = styled.div`
   color: #fff;
   background-image: url(${(props) => props.img});
@@ -43,37 +81,17 @@ const Card = styled.div`
   :hover {
     transform: scale(1.05);
   }
-`;
 
-const CardContent = styled.div`
-  --padding: 1.5rem;
-  padding: var(--padding);
-  background: linear-gradient(
-    hsl(0 0% 0% / 0),
-    hsl(20 0% 0% / 0.3) 20%,
-    hsl(0 0% 0% / 1)
-  );
-`;
-
-
-const Title = styled.h2`
-  position: relative;
-  width: max-content;
-  margin: 1rem 0;
-
-  :hover  {
-    transform: scale(1);
+  &:hover ${CardContent} {
+    transform: translateY(0);
   }
 
-  :after {
-    content: "";
-    position: absolute;
-    height: 4px;
-    left: calc(var(--padding) * -1);
-    bottom: 0;
-    width: calc(100% + var(--padding));
-    background: #090;
-    transform: scale(1);
+  &:hover ${CardContent} > *:not(${Title}) {
+    opacity: 1;
+  }
+
+  &:hover ${Title}:after {
+    transform: scaleX(1);
   }
 `;
 

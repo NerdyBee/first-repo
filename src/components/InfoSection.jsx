@@ -119,7 +119,7 @@ const InfoSection = () => {
             <FeatureList>Swimming Pool</FeatureList>
             <FeatureList>Hall</FeatureList>
             <FeatureList>Parking</FeatureList>
-            <FeatureList>Internet Access</FeatureList>
+            <FeatureList>Free WIFI</FeatureList>
             <FeatureList>Public Computer</FeatureList>
             <FeatureList>Bar & Lounge</FeatureList>
             <FeatureList>Spa & Wellness</FeatureList>
