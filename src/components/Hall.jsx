@@ -56,6 +56,7 @@ const Right = styled.div`
   h1 {
     font-size: 2.5rem;
     font-weight: lighter;
+    color: var(--dark-bg-txt);
   }
 
   p {
