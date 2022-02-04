@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import FeaturedRooms from './components/FeaturedRooms';
+import Hall from './components/Hall';
 import Hero from './components/Hero';
 import InfoSection from './components/InfoSection';
 import IntroHall from './components/IntroHall';
@@ -26,7 +27,8 @@ function App() {
       <InfoSection />
       <FeaturedRooms />
       {/* <Rooms /> */}
-      <IntroHall reverse='true' />
+      <IntroHall />
+      <Hall />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Button } from './Button';
-import roomImg from '../images/banquet-1.jpg'
+import roomImg from "../images/restaurant.jpg";
 
 const InfoDiv = styled.section`
   width: 100%;
@@ -53,6 +53,7 @@ const ColumnLeft = styled.div`
 const ColumnRight = styled.div`
   padding: 3rem;
   display: flex;
+  max-height: 500px;
 
   @media screen and (max-width: 768px) {
     // order: $/{(props) => (props.reverse ? "2" : "1")};
@@ -67,10 +68,19 @@ const ColumnRight = styled.div`
   }
 `;
 
-const IntroHall = ({reverse}) => {
+const IntroHall = () => {
   return (
     <InfoDiv>
-      <h1 style={{ color: "black", textAlign: "center", marginBottom: "1rem", fontSize: "2rem" }}>Banquet & Meeting Hall</h1>
+      <h1
+        style={{
+          color: "black",
+          textAlign: "center",
+          marginBottom: "1rem",
+          fontSize: "2rem",
+        }}
+      >
+        Restaurant
+      </h1>
       <Container>
         <ColumnRight>
           <img src={roomImg} alt="" />
@@ -80,7 +90,7 @@ const IntroHall = ({reverse}) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
             laboriosam accusantium, minima illo cum hic magnam repudiandae fugit
             ab est nisi in saepe doloribus nostrum, amet animi dolorum
-            voluptates fugiat.
+            voluptates fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam repellat id dolore similique magni deleniti minima esse assumenda! Nesciunt, veritatis?
           </p>
           <Button to="/home">Book Now</Button>
         </ColumnLeft>
