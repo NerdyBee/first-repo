@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Button = styled(Link)`
-  background: ${({ primary }) => (primary ? "#073336" : "CD853F")};
+  background: ${({ primary }) => (primary ? "#073336" : "#CD853F")};
   white-space: nowrap;
   outline: none;
   border: none;
@@ -21,5 +21,6 @@ export const Button = styled(Link)`
 
   &:hover {
     transform: translateY(-2px);
+    background: ${({ primary }) => (primary ? "#CD853F" : "#FD9F74")};
   }
 `;

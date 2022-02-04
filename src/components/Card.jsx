@@ -4,13 +4,12 @@ import { Button } from "./Button";
 
 const CardDiv = styled.section`
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   min-width: 380px;
   height: 100%;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  margin: 1rem auto;
 
   @media screen and (max-width: 780px) {
     width: 95%;
@@ -42,10 +41,10 @@ const Title = styled.h2`
     bottom: 0;
     margin-bottom: -0.29rem;
     width: calc(100% + var(--padding));
-    background: #090;
+    background: #84f62c;
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 500ms ease;
+    transition: transform 1500ms ease-in-out;
   }
 `;
 
@@ -95,6 +94,30 @@ const Card = styled.div`
   }
 `;
 
+const PriceTop = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: azure;
+  padding: 0.3rem 0.6rem 0.5rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  transition: 0.4s linear;
+  -webkit-transition: 0.4s linear;
+  -moz-transition: 0.4s linear;
+  -ms-transition: 0.4s linear;
+  -o-transition: 0.4s linear;
+
+  h6 {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: .25rem;
+  }
+`;
+
 const BriefInfo = styled.p`
     margin: .5rem 0;
     line-height: 1.2rem;
@@ -108,6 +131,10 @@ const RoomCard = ({ item }) => {
   return (
     <CardDiv>
       <Card img={item.fields.images[0].fields.file.url}>
+        <PriceTop>
+          <h6># {item.fields.price}</h6>
+          <p>per night</p>
+        </PriceTop>
         <CardContent>
           <Title>{item.fields.name}</Title>
           <CardBody>

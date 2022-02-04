@@ -26,6 +26,7 @@ const Container = styled.div`
   @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
     padding: 0;
+    // grid-template-rows: 500px;
   }
 `;
 
@@ -41,7 +42,7 @@ const ColumnLeft = styled.div`
 
 
   h1 {
-    color: #008c94;
+    color: var(--primary-color);
     margin-bottom: 1rem;
     font-size: clamp(1.5rem, 6vw, 2rem);
     text-align: center;
@@ -71,7 +72,7 @@ const FeatureList = styled.li`
   display: flex;
   flex-direction: row;
   line-height: 2.5rem;
-  color: #ff893b;
+  color: var(--secondary-color);
 `;
 
 const ColumnRight = styled.div`

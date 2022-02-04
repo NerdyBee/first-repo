@@ -4,15 +4,21 @@ import { items } from '../data/RoomData';
 import RoomCard from './Card';
 
 const Container = styled.div`
-  padding: 20px;
+  padding: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 `;
 
+const HeroTitle = styled.h1`
+  color: var(--primary-color);
+  text-align: center;
+`
 
 const FeaturedRooms = () => {
   return (
+    <>
+    <HeroTitle>Featured Rooms</HeroTitle>
     <Container>
       {items
         .filter((item) => item.fields.featured === true)
@@ -20,6 +26,7 @@ const FeaturedRooms = () => {
           <RoomCard item={item} key={item.id} />
         ))}
     </Container>
+    </>
   );
 };
 

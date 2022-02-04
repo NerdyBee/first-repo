@@ -1,6 +1,13 @@
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
+    :root {
+        --primary-color: #008c94;
+        --secondary-color: #ff893b;
+        --dark-bg: #003130;
+        --dark-bg-txt: #FF893B;
+    }
+
     * {
         margin: 0;
         padding: 0;
@@ -10,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
 
     html, body {
         overflow-x: hidden;
+    }
+
+    .heroTitle {
+        color: var(--primary-color);
+        text-align: center;
     }
 
     .scrolled {
