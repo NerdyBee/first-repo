@@ -40,7 +40,6 @@ const ColumnLeft = styled.div`
   padding: 1rem 2rem;
   //   order: $/{({reverse}) => (reverse ? '2' : '1')};
 
-
   h1 {
     color: var(--primary-color);
     margin-bottom: 1rem;
@@ -52,18 +51,30 @@ const ColumnLeft = styled.div`
     margin-bottom: 2rem;
     text-align: center;
   }
+
   h4 {
     color: #94410a;
     margin-top: 2rem;
   }
+
+  ul {
+    margin: 0.5rem auto;
+    line-height: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  li {
+    text-decoration: none;
+    color: var(--dark-bg-txt);
+  }
 `;
 
 const Featured = styled.ul`
-  margin: 2rem 0.5rem;
-  list-style: square outside none;
+  margin: 2rem auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  justify-content: space-between;
   padding: 1rem 1rem;
   width: 100%;
 `;
@@ -112,20 +123,20 @@ const InfoSection = () => {
             Book Now
           </Button>
           
-          <Featured>
-            <FeatureList>Accommodations</FeatureList>
-            <FeatureList>Restaurants</FeatureList>
-            <FeatureList>Laundry</FeatureList>
-            <FeatureList>Fitness Center</FeatureList>
-            <FeatureList>Swimming Pool</FeatureList>
-            <FeatureList>Hall</FeatureList>
-            <FeatureList>Parking</FeatureList>
-            <FeatureList>Free WIFI</FeatureList>
-            <FeatureList>Public Computer</FeatureList>
-            <FeatureList>Bar & Lounge</FeatureList>
-            <FeatureList>Spa & Wellness</FeatureList>
-            <FeatureList>Car Shuttle</FeatureList>
-          </Featured>
+          <ul>
+            <li>Accommodations</li>
+            <li>Restaurants</li>
+            <li>Laundry</li>
+            <li>Fitness Center</li>
+            <li>Swimming Pool</li>
+            <li>Hall</li>
+            <li>Parking</li>
+            <li>Free WIFI</li>
+            <li>Public Computer</li>
+            <li>Bar & Lounge</li>
+            <li>Spa & Wellness</li>
+            <li>Car Shuttle</li>
+          </ul>
         </ColumnLeft>
         <ColumnRight>
           <img src={roomImg} alt="" />
