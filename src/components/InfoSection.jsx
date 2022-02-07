@@ -25,7 +25,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
-    padding: 2rem 0;
+    padding: 2rem 0 0;
     margin: 0 auto;
     // grid-template-rows: 500px;
   }
@@ -80,30 +80,13 @@ const ColumnLeft = styled.div`
   }
 `;
 
-// const Featured = styled.ul`
-//   margin: 2rem auto;
-//   display: grid;
-//   grid-template-columns: 1fr 1fr;
-//   padding: 1rem 1rem;
-//   width: 100%;
-// `;
-
-// const FeatureList = styled.li`
-//   display: flex;
-//   flex-direction: row;
-//   line-height: 2.5rem;
-//   color: var(--secondary-color);
-// `;
-
 const ColumnRight = styled.div`
   padding: 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  //   order: $/{({reverse}) => (reverse ? '1' : '2')};
 
   @media screen and (max-width: 768px) {
-    //   order: $/{({reverse}) => (reverse ? '2' : '1')};
     width: 90%;
     height: 90%;
   }

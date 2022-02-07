@@ -10,6 +10,7 @@ import Home from './pages/Home';
 import Room from './pages/Rooms';
 import Abouts from './pages/About';
 import Services from './pages/Services';
+import Contact from './pages/Contact';
 
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -29,6 +30,7 @@ function App() {
           <Route path="/rooms/" element={<Room />} />
           <Route path="/about/" element={<Abouts />} />
           <Route path="/services/" element={<Services />} />
+          <Route path="/contact/" element={<Contact />} />
         </Routes>
         <Footer />
       </>

@@ -3,7 +3,7 @@ import FeaturedRooms from '../components/FeaturedRooms';
 import Hero from '../components/Hero'
 import { SliderData } from "../data/SliderData";
 import InfoSection from "../components/InfoSection";
-import IntroHall from '../components/IntroHall';
+import IntroHall from '../components/Restaurant';
 import Hall from '../components/Hall';
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <Hero slides={SliderData} />
       <InfoSection />
       <FeaturedRooms />
-      <IntroHall/>
+      <IntroHall />
       <Hall />
     </>
   );

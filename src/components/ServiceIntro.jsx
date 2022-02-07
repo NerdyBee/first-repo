@@ -16,8 +16,8 @@ const Container = styled.div`
 
   @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 100%;
-    padding: 2rem 0;
+    // grid-template-rows: 100%;
+    padding: 0;
   }
   
 `;
@@ -27,7 +27,7 @@ const LeftColumn = styled.div`
 
   img {
     width: 100%;
-    padding: 0 0 0 3rem;
+    padding: 0 3rem 0 0;
     object-fit: cover;
   }
 
@@ -57,6 +57,8 @@ const RightColumn = styled.div`
   }
 
   @media screen and (max-width: 760px) {
+    line-height: 1.5rem;
+
     h1 {
         margin: 1rem 0;
         font-size: 2rem;

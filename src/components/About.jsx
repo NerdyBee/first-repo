@@ -17,17 +17,17 @@ const Container = styled.div`
 
   @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
-    grid-template-rows: 100%;
-    padding: 2rem 0;
+    // grid-template-rows: 100%;
+    padding: 0;
   }
 `;
 
-const LeftColumn = styled.div`
+const RightColumn = styled.div`
   display: flex;
 
   img {
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 1rem;
     object-fit: cover;
   }
 
@@ -37,12 +37,12 @@ const LeftColumn = styled.div`
     img {
       width: 90%;
       object-fit: fit;
-      padding: 0;
+      padding: 2rem 0;
     }
   }
 `;
 
-const RightColumn = styled.div`
+const LeftColumn = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 2rem;
@@ -69,7 +69,7 @@ const About = () => {
   return (
     <>
       <Container>
-        <RightColumn>
+        <LeftColumn>
           <h1>About Us</h1>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
@@ -82,10 +82,10 @@ const About = () => {
             nostrum molestiae. Dolore.
           </p>
           <Button to='/' primary='true' >Contact Us</Button>
-        </RightColumn>
-        <LeftColumn>
-          <img src={Img} alt="" />
         </LeftColumn>
+        <RightColumn>
+          <img src={Img} alt="" />
+        </RightColumn>
       </Container>
     </>
   );
