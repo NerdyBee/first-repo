@@ -1,13 +1,18 @@
 import React from 'react';
-import Hero from "../components/Hero";
-import { SliderData } from "../data/SliderData";
+import Divider from '../components/Divider';
+import History from '../components/History';
+import PageHero from '../components/PageHero';
+import About from '../components/About';
 
-const About = () => {
+const Abouts = () => {
   return (
     <>
-      <Hero slides={SliderData} />
+      <PageHero />
+      <Divider />
+      <About />
+      <History />
     </>
   );
 };
 
-export default About;
+export default Abouts;

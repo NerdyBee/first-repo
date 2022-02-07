@@ -73,7 +73,7 @@ const IntroHall = () => {
     <InfoDiv>
       <h1
         style={{
-          color: "black",
+          color: "#111",
           textAlign: "center",
           marginBottom: "1rem",
           fontSize: "2rem",

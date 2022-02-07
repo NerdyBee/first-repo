@@ -179,7 +179,6 @@ const Hero = ({slides}) => {
                   </HeroSlider>
                     <HeroContent>
                         <h1>{slide.title}</h1>
-                        {/* <p>{slide.price}</p> */}
                         <Button to={slide.path} primary='true'>
                             {slide.label}
                             <Arrow />

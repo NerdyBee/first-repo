@@ -32,6 +32,7 @@ const Title = styled.h2`
   position: relative;
   width: max-content;
   margin: 1rem 0;
+  letter-spacing: .3rem;
 
   :after {
     content: "";
@@ -45,6 +46,31 @@ const Title = styled.h2`
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 1500ms ease-in-out;
+  }
+`;
+
+const PriceTop = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(10, 10, 10, 0.7);
+  color: azure;
+  padding: 0.3rem 0.6rem 0.5rem;
+  border-bottom-right-radius: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.8s linear;
+  -moz-transition: 0.8s linear;
+  -ms-transition: 0.8s linear;
+  -o-transition: 0.8s linear;
+  transform: scaleX(0);
+
+  h6 {
+    margin-bottom: 0;
+    font-size: 0.9rem;
+    font-weight: 300;
+    letter-spacing: 0.25rem;
   }
 `;
 
@@ -74,6 +100,7 @@ const Card = styled.div`
   max-width: 50ch;
   border-radius: 0.5rem;
   overflow: hidden;
+  position: relative;
 
   transition: transform 500ms ease;
 
@@ -92,29 +119,9 @@ const Card = styled.div`
   &:hover ${Title}:after {
     transform: scaleX(1);
   }
-`;
 
-const PriceTop = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.8);
-  color: azure;
-  padding: 0.3rem 0.6rem 0.5rem;
-  border-bottom-right-radius: 1rem;
-  font-size: 1rem;
-  text-align: center;
-  transition: 0.4s linear;
-  -webkit-transition: 0.4s linear;
-  -moz-transition: 0.4s linear;
-  -ms-transition: 0.4s linear;
-  -o-transition: 0.4s linear;
-
-  h6 {
-    margin-bottom: 0;
-    font-size: 0.9rem;
-    font-weight: 300;
-    letter-spacing: .25rem;
+  &:hover ${PriceTop} {
+    transform: translateY(0);
   }
 `;
 

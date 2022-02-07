@@ -8,6 +8,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background: rgba(83, 83, 83, 0.1);
 `;
 
 const HeroTitle = styled.h1`

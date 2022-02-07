@@ -5,6 +5,7 @@ import Img1 from '../images/room-1.jpeg'
 
 const Card = styled.div`
   display: grid;
+  max
   grid-template-columns: 400px;
   grid-template-rows: 210px 250px 20px;
   grid-template-areas: "image" "text" "stats";

@@ -16,7 +16,7 @@ const InfoDiv = styled.section`
 
 
 const Container = styled.div`
-  padding: 2rem calc((100vw - 1300px) / 2);
+  padding: 2rem calc((100vw - 1100px) / 2);
   margin: 2rem auto 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -26,6 +26,7 @@ const Container = styled.div`
   @media screen and (max-width: 760px) {
     grid-template-columns: 1fr;
     padding: 0;
+    margin: 0 auto;
     // grid-template-rows: 500px;
   }
 `;
@@ -68,6 +69,14 @@ const ColumnLeft = styled.div`
   li {
     text-decoration: none;
     color: var(--dark-bg-txt);
+    list-style: square;
+    margin: 0 1.5rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    li {
+      margin: 3px;
+    }
   }
 `;
 
@@ -127,7 +136,7 @@ const InfoSection = () => {
             <li>Accommodations</li>
             <li>Restaurants</li>
             <li>Laundry</li>
-            <li>Fitness Center</li>
+            <li>Gym</li>
             <li>Swimming Pool</li>
             <li>Hall</li>
             <li>Parking</li>

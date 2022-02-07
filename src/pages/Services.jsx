@@ -1,11 +1,14 @@
 import React from 'react';
-import Hero from "../components/Hero";
-import { SliderData } from "../data/SliderData";
+import PageHero from '../components/PageHero';
+import ServiceIcons from '../components/ServiceIcons';
+import ServiceIntro from '../components/ServiceIntro';
 
 const Services = () => {
   return (
     <>
-      <Hero slides={SliderData} />
+      <PageHero />
+      <ServiceIntro />
+      <ServiceIcons />
     </>
   );
 };

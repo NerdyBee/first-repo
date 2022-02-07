@@ -1,13 +1,14 @@
 import React from 'react';
-import Hero from "../components/Hero";
-import { SliderData } from "../data/SliderData";
+import Rooms from '../components/Rooms';
+import PageHero from '../components/PageHero';
 
-const Rooms = () => {
+const Room = () => {
   return (
     <>
-      <Hero slides={SliderData} />
+      <PageHero />
+      <Rooms />
     </>
   );
 };
 
-export default Rooms;
+export default Room;

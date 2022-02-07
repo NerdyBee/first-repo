@@ -36,7 +36,7 @@ const Logo = styled(Link)`
 const MenuBars = styled(FaBars)`
   display: none;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     display: block;
     margin-right: 10px;
     height: 35px;
@@ -53,7 +53,7 @@ const NavMenu = styled.div`
   align-items: center;
   margin-right: -40px;
 
-  @media screen and (max-width: 760px){
+  @media screen and (max-width: 960px){
     display: none;
   }
 `;
@@ -67,7 +67,7 @@ const NavBtn = styled.div`
   align-items: center;
   margin-right: 14px;
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 960px) {
     display: none;
   }
 `;
